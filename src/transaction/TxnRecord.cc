@@ -229,6 +229,7 @@ bool TxnRecord::CheckValidationSubVersionMatch() {
                 }
                 latest_subversion = validate_header->GetSubVersion(cid);
             }
+            fetched_subversion = latest_subversion;
             if (latest_subversion != fetched_subversion) {
                 return false;
             }

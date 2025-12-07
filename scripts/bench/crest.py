@@ -1,9 +1,9 @@
 import shutil
-from scripts.bench.node import Node
+from node import Node
 import time
 import threading
 import os
-import scripts.bench.config as config
+import config
 import numpy as np
 from scp import SCPClient
 from typing import List, Tuple
@@ -79,7 +79,7 @@ class CrestComputeNode(Node):
   def run(self, workload: str, thread_num: int, coro_num: int) -> bool: 
     txn_num = 0
     if workload == "tpcc":
-      txn_num = 50000 * thread_num
+      txn_num = 25000 * thread_num
     if workload == "smallbank":
       txn_num = 250000 * thread_num
     if workload == "ycsb":

@@ -1,8 +1,8 @@
 import numpy as np
-import scripts.bench.crest as crest
+import crest
 import time
 import sys
-import scripts.bench.config as config
+import config
 
 # TPC-C
 NUM_WAREHOUSE = 40
