@@ -1,0 +1,5 @@
+numpy>=2.2.1
+scipy>=1.5.11
+matplotlib>=3.10.0
+scp>=0.15.0
+paramiko>=3.5.0
